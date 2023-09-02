@@ -5,13 +5,13 @@
 {% block scripts %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1FRQDD44F"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGJBQJYQ4X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-Y1FRQDD44F');
+  gtag('config', 'G-RGJBQJYQ4X');
 </script>
 
 <script src="{{static_url("components/requirejs/require.js") }}" type="text/javascript" charset="utf-8"></script>
@@ -24,12 +24,12 @@
 {{ super() }}
 {% if status_code == 403 %}
   <p><strong>It looks like you need to request an account!</strong></p>
-  <p>If you are a LibreTexts instructor or UC Davis affiliate, you can request an account by
-  <a href="mailto:jupyterteam@ucdavis.edu">sending us</a> an email from a Google Authentication connected email address.</p>
-  <p>LibreTexts affiliated student accounts should be requested by their instructors.</p>
+  <p>If you are a student or professor in NCU CSIE, you can request an account by
+  <a href="mailto:shadowcollect@csie.ncu.edu.tw">sending us</a> an email.</p>
+  <p>Transfer students from other departments should send us a mail too.</p>
 {% elif status_code == 400 %}
   <p>If your authentication has expired, please login again from <a href="/">the home page</a>.</p>
 {% else %}
-  <p>Oh no! Something is probably wrong on our end. If this problem persists, please <a href="mailto:jupyterteam@ucdavis.edu">email us</a>.</p>
+  <p>Oh no! Something is probably wrong on our end. If this problem persists, please <a href="mailto:shadowcollect@csie.ncu.edu.tw">email us</a>.</p>
 {% endif %}
 {% endblock error_detail %}

@@ -5,13 +5,14 @@
 {% block scripts %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1FRQDD44F"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGJBQJYQ4X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-Y1FRQDD44F');
+  gtag('config', 'G-RGJBQJYQ4X');
 </script>
 
 <script src="{{static_url("components/requirejs/require.js") }}" type="text/javascript" charset="utf-8"></script>
@@ -25,17 +26,17 @@
   <div class="branding">
     <div class="logos">
       <a class="logo" href="https://www.ncu.edu.tw/tw/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/NCULogo.svg/400px-NCULogo.svg.png" alt="Libretexts" style="max-height:150px;max-width:100%;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/NCULogo.svg/400px-NCULogo.svg.png" alt="NCU" style="max-height:150px;max-width:100%;">
       </a>
       <a class="logo" href="https://www.ceecs.ncu.edu.tw/" target="_blank" style="padding:20px;">
-        <img src="https://www.ceecs.ncu.edu.tw/images/logo-wide.svg" alt="UC Davis" style="max-height:60px;max-width:100%;">
+        <img src="https://www.ceecs.ncu.edu.tw/images/logo-wide.svg" alt="NCU CEECS" style="max-height:60px;max-width:100%;">
       </a>
       <a class="logo" href="https://www.csie.ncu.edu.tw/"
           target="_blank">
-        <img class="sponsor" src="https://www.csie.ncu.edu.tw/images/logo.png" alt="U.S. Department of Education">
+        <img class="sponsor" src="https://www.csie.ncu.edu.tw/images/logo.png" alt="NCU CSIE">
       </a>
-      <a class="logo" href="https://github.com/shadowcollecter" target="_blank">
-        <img class="sponsor" src="https://avatars.githubusercontent.com/u/25812692?v=4" alt="ASUCD">
+      <a class="logo" href="https://github.com/shadowcollecter/csie-jupyterhub" target="_blank">
+        <img class="sponsor" src="https://avatars.githubusercontent.com/u/25812692?v=4" alt="Issue Support">
       </a>
     </div>
   </div>
@@ -55,18 +56,18 @@
         <a href="https://www.csie.ncu.edu.tw/" target="_blank">NCU SNMG</a>.
       </small>
     </p>
-
+    <p><strong>公告區：</strong>目前沒有公告</p>
     <div class="sponsors row align-items-center justify-content-around flex-wrap"></div>
   </div>
   {% endblock login %}
 
   <div class="container col-sm-7">
     <h1>Welcome to the NCU CSIE JupyterHub!</h1>
-    <p>This JupyterHub serves GPU amd compute instructors to their students, as well as NCU CSIE staff, and students.</p>
+    <p>This JupyterHub serves GPU amd compute instructors to their students, as well as NCU CSIE professos, and students.</p>
 
     <h2>Logging in to the Hub</h2>
     <p>
-      If you are a NCU CSIE STudent Professor or staf, you may automatically login to the hub with your NCU portal account. Other students can require an account by <a href="mailto:shadowcollect@csie.ncu.edu.tw">sending us</a> an email.
+      If you are a NCU CSIE Student, you may automatically login to the hub with your NCU portal account. Other students or professors can require an account by <a href="mailto:shadowcollect@csie.ncu.edu.tw">sending us</a> an email. However you can syill login, but your notebook will be killed in minutes. </a> Transfer students from other departments should send us a mail too.
     </p>
 
     <h2 id="gettingstartedwithjupyter">JupyterLab Doc and System real-time status</h2>
@@ -77,16 +78,16 @@
     <p>Some resources to learn Jupyter:</p>
     <ul>
       <li>
-        <a href="https://jupyter.org/try">jupyter.org/try</a> has interactive demo notebooks in many different languages
+        <a href="https://github.com/shadowcollecter/csie-jupyterhub">System rules and some detaile </a> It is stil building~~
       </li>
       <li>
         <a href="https://github.com/Reproducible-Science-Curriculum/introduction-RR-Jupyter/blob/e5aece1011a43edfd739cbd83a2f4346091a86e2/notebooks/getting_started_with_jupyter_notebooks.ipynb"> Familiarize Yourself with Jupyter</a>, an example Jupyter Notebook tutorial on GitHub
       </li>
       <li>
-        <a href="https://gpu-prometheus.csie.ncu.edu.tw/">System Real-time Status</a> Login by public/ncucsie
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">System Real-time Status</a> Not finished yet HAHA
       </li>
       <li>
-        <a href="https://app.frame.io/reviews/7a3a3e89-63db-4f7d-a1db-c2a852275f75/b82343bc-f242-4f5e-87a3-5c89dd0408f4?version=e0ce5c2f-28f9-4eb2-988a-8988851aa881">Demo video</a> of how to navigate JupyterLab
+        <a href="https://github.com/jupyterhub/jupyterhub">Jupyterhub github page</a> for more information on navigating the interface.
       </li>
       <li>
         Visit the <a href="https://jupyterlab.readthedocs.io/en/latest/user/interface.html">JupyterLab documentation</a> for more information on navigating the interface.
@@ -94,7 +95,7 @@
     </ul>
 
     <h2>Any questions?</h2>
-    <p>Please checkout our <a href="{{base_url}}faq">faq</a> page. If you can't find your question, feel free to email us at <a href="mailto:shadowcollect@csie.ncu.edu.tw">shadowcollect@csie.ncu.edu.tw</a>. For technical issues, open an issue on <a href="https://github.com/LibreTexts/metalc/issues" target="_blank">Github</a> and we will try to resolve it.</p>
+    <p>Please open a issue on <a href="https://github.com/shadowcollecter/csie-jupyterhub">GitHub page</a>, or feel free to email us at <a href="mailto:shadowcollect@csie.ncu.edu.tw">shadowcollect@csie.ncu.edu.tw</a>. This page is base on an open source project on  <a href="https://github.com/LibreTexts/jupyterhub-templates" target="_blank">Github</a> </p>
   </div>
 </div>
 

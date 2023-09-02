@@ -3,13 +3,13 @@
 {% block scripts %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1FRQDD44F"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGJBQJYQ4X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-Y1FRQDD44F');
+  gtag('config', 'G-RGJBQJYQ4X');
 </script>
 
 <script src="{{static_url("components/requirejs/require.js") }}" type="text/javascript" charset="utf-8"></script>
@@ -56,8 +56,8 @@
             {% endif %}
 
             {# Start LibreTexts specific change #}
-            <li><a href="{{base_url}}about">About</a></li>
-            <li><a href="{{base_url}}faq">FAQ</a></li>
+            <!--<li><a href="{{base_url}}about">About</a></li>
+            <li><a href="{{base_url}}faq">FAQ</a></li>-->
             {# End change #}
 
           {% endblock %}
@@ -66,8 +66,8 @@
         {# Start LibreTexts specific change #}
         {% else %}
         <ul class="nav navbar-nav">
-          <li><a href="{{base_url}}about">About</a></li>
-          <li><a href="{{base_url}}faq">FAQ</a></li>
+          <!--<li><a href="{{base_url}}about">About</a></li>
+          <li><a href="{{base_url}}faq">FAQ</a></li>-->
         </ul>
         {# End change #}
 
